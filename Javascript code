@@ -1,0 +1,72 @@
+let arr=[1,1,2,2,3,3,3,4,4,4,5,5,5,5]
+let newArray = [];
+for(let i=0;i<arr.length;i++){
+  flag=0;
+  for(let j=0;j<arr.length;j++){
+    if(arr[i] == arr[j]){
+      flag++;
+    }
+  }
+  if(flag>=2){
+    newArray.push(arr[i])
+    flag=0;
+  }else{
+    flag=0;
+  }
+}
+
+console.log(newArray)
+
+let removeDuplicates = []
+
+removeDuplicates = newArray.filter((item,index) => newArray.indexOf(item) === index)
+
+newArray.forEach(item => {
+  if(!removeDuplicates.includes(item)){
+    removeDuplicates.push(item)
+  }
+})
+
+removeDuplicates = [...new Set(newArray)]
+
+console.log(removeDuplicates)
+
+
+let string = "Nikhil Karanam";
+
+console.log(string)
+
+function reverseString(string){
+  console.log(Array.from(string).reverse().join(''))  
+  console.log(string.split('').reverse().join(''))
+  console.log([...string].reverse().join(''))
+  console.log(string.split('').reduce((acc, char) => char + acc, ''));
+}
+reverseString(string)
+
+
+let number = "NikiN";
+
+let num = number.split('').reverse().join('')
+
+if(num == number){
+  console.log("Palindrome")
+}else{
+  console.log("Not Palindrome")
+}
+
+
+console.log(number.toString().split('').reverse().join(''))
+
+
+let array = [1,2,3,4,5];
+
+console.log(Math.max(...array))
+console.log(Math.min(...array))
+
+
+var myArray = [1,1,1,2,2,2,3,4,4,5]
+
+var filteredArray = myArray.filter(item => (this[item] = ++this[item] || 1) == 2, {})
+ 
+console.log(filteredArray)
