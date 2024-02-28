@@ -1,0 +1,27 @@
+function palindrome(){
+  // let number=121;
+  // number = number.toString().split('')
+  // let j=number.length-1;
+  // let count=0;
+  // for(let i=0;i<number.length;i++){
+  //   console.log(number[i],number[j])
+  //   if(number[i]==number[j]){
+  //     count++;
+  //   }
+  //   j--;
+  // }
+  // if(count==number.length){
+  //   console.log("Palindrome")
+  // }else{
+  //   console.log("Not Palindrome")
+  // }
+  
+  let number=12221;
+  let reversenumber= number.toString().split('').reverse().join('')
+  if(number == reversenumber){
+    console.log("Palindrome")
+  }else{
+    console.log("Not Palindrome")
+  }
+}
+palindrome()
