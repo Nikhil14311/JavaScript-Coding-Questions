@@ -1,0 +1,32 @@
+function duplicateNumbers(){
+  //let array = [1,2,3,4,5,1,2,3,4,5];
+  //let filteredArray = []
+  //filteredArray = array.filter((item,index) => array.indexOf(item) == index)
+  
+  // array.forEach(item => {
+  //   if(!filteredArray.includes(item)){
+  //     filteredArray.push(item)
+  //   }
+  // })
+  
+  //let secondArray = [1,2,3,1,2,3,1,4,5];
+  
+  //filteredArray = secondArray.filter(item => (this[item] = ++this[item] || 1) == 2)
+  
+  // secondArray.filter(item => {
+  //   console.log("item", (this[item] = ++this[item] || 1))
+  // })
+  
+  //console.log(filteredArray)
+    
+    
+  let stringArray = "Nikhil Karanam"
+  let finalString = ""
+  stringArray = stringArray.replace(/ /g,'') // or replaceAll(' ','')
+  finalString = stringArray.toLowerCase().split('').filter(item => (this[item] = ++this[item] || 1) == 2 ).join('')
+  //finalString = [...new Set(finalString)].join('')
+  console.log(finalString)
+}
+
+
+duplicateNumbers()
